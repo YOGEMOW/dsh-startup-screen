@@ -50,5 +50,19 @@
       "platform": "web"
     }
   },
-  "author": "沈宏宏"
+  "author": "沈宏宏",
+  "contributors": [
+    {
+      "name": "YOGEMOW",
+      "url": "https://github.com/YOGEMOW"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOGEMOW/dsh-startup-screen.git"
+  },
+  "upstream": {
+    "type": "git",
+    "url": "https://github.com/6shenhonghong9/dsh-startup-screen.git"
+  }
 }

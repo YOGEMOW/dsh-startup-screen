@@ -330,6 +330,17 @@
    否则会和 WELCOME 版式叠在一起 */
 .dsu-center.dsu-off { opacity: 0; }
 
+/* 状态行 + 右侧信息行：外层撑满整行，信息行按状态行中线垂直对齐。
+   这样中央区（状态行以下的副标题 / 分隔线 / 鲸鱼）整体上下浮动时，
+   信息行会跟着状态行走，不会和副标题叠在一起。 */
+.dsu-statusrow {
+  position: relative;
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  justify-content: center;
+}
+
 .dsu-status {
   display: flex;
   align-items: center;
@@ -424,13 +435,15 @@
   opacity: 0.5;
 }
 
-/* 右侧等宽信息行（对应参考片 "· ID CONFIRMED : JOYC"） */
+/* 右侧等宽信息行（对应参考片 "· ID CONFIRMED : JOYC"）
+   现在挂在状态行右侧、和中文主字同一中线，不再压在副标题上；
+   x 取 50% + 264px 是为了让最长的主字（读取完毕 · 核验通过）也留出空隙。 */
 .dsu-idline {
   position: absolute;
-  left: calc(50% + 190px);
-  top: 49%;
+  left: calc(50% + 264px);
+  top: 50%;
   transform: translateY(-50%) translateX(16px);
-  z-index: 22;
+  z-index: 23;
   font-family: var(--dsu-mono);
   font-size: 12px;
   letter-spacing: 0.2em;

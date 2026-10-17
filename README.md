@@ -5,6 +5,10 @@ DeepSeek Harness 的启动界面与启动动画插件。
 黑幕 DeepSeek 标识 → 过曝洗白 → 暖白「技术档案」底板 → 五步交互式访问授权 →
 色散故障揭幕。
 
+> 本仓库是 [`6shenhonghong9/dsh-startup-screen`](https://github.com/6shenhonghong9/dsh-startup-screen)
+> 的镜像分支（维护：YOGEMOW），原仓库保留为 git `upstream`。
+> 同步上游：`git fetch upstream && git merge upstream/main`。
+
 ---
 
 ## 功能
